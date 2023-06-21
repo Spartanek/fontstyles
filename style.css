@@ -1,58 +1,56 @@
-:root {
-  --accent-color: green;
-  --background-form-color: #000000;
-  --main-text: #222222;
-  --accent-color-on-form-section: #ffffff;
-  --placeholders: red;
-  --services-text: #aaa5a5;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-p {
-  color: var(--accent-color);
+ul,
+ol {
+  list-style: none;
 }
 
 a {
-  color: var(--placeholders);
+  text-decoration: none;
 }
 
-h1 {
-  color: var(--main-text);
-}
-
-.red {
-  color: var(--placeholders);
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 p {
-  color: red;
-  color: var(--accent-color);
+  width: 100px;
+
+  padding: 20px 15px 30px 15px; /* за часовою стрілкою починаючи з гори */
+  padding: 200px 15px; /* 1-число (відповідає за верхній та нижній, друге число за правий та лівий )  */
+  padding: 20px; /* надає заданий падінг усім сторонам */
+
+  border: 2px solid red;
+  border-radius: 0px 0px 10px 10px;
+  /* border-right: 2px;
+  border-top: 2px;
+  border-left: 2px;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: red; */
 }
 
-.red {
+.is-hidden {
+  visibility: hidden;
+  opacity: 1;
 }
 
-/* @font-face {
-  font-family: 'Roboto';
-  src: url(./fonts/Roboto-Medium.ttf) format('ttf');
-  src: url(./fonts/Roboto-Bold.ttf) format('ttf');
-} */
-
-.paragraph {
-  font-family: 'Roboto', sans-serif; /* назва шрифтифів які необхідні */
-  /* font-style: italic;  стиль шрифту( похилий або нормальний) */
-  font-size: 24px; /* розмір шрифту */
-  line-height: 34px; /* висота рядка */
-  word-spacing: 2px; /* відстань між словами  */
-  letter-spacing: 1px; /* відстань між буквами  */
-  font-weight: 100; /* жирність шрифту */
-  color: cornflowerblue; /* колір шрифту */
+.section {
+  padding: 94px 0;
 }
 
-.nav-link {
-  font-family: 'Raleway';
-  font-style: italic;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 700;
-  color: red;
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 10px;
 }
